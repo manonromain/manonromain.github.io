@@ -24,6 +24,7 @@ I implemented several state-of-the-art papers to compare them to our model and c
   I also worked with the Medical Imaging team to apply our techniques to detecting pathologies.
 - __September 2015 - April 2016__: _Educator intern_ at Apprentis d'Auteuil, France  
 Organized and leading educational activities and charity events; developed a Computer Science Introduction Course using Scratch; worked in teams with caseworkers, parents and children.
+
 ## Education
 
 - __MSc. at Stanford University__ (2018 - 2020)  
