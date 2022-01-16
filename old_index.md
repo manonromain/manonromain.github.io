@@ -11,7 +11,7 @@ I'm a PhD candidate in Statistics at Sierra, Inria, currently doing a gap year a
 ## Job & Research Experience 
 
 - __November 2021 - now__: _Data journalist_ at Le Monde, France  
-As part of Les décodeurs, I wrote some data-journalism articles, a few fact-checks. I also write Python scripts for the newsroom and clean large databases for investigation purposes. 
+As part of Les Décodeurs, I wrote some data-journalism articles, a few fact-checks. I also write Python scripts for the newsroom and clean large databases for investigation purposes. 
 - __June 2020 - August 2021__: _PhD candidate_ at SIERRA - INRIA/CNRS, France
 Structure learning of causal networks using optimization techniques. Advised by Alexandre d'Aspremont.
 - __2019 - 2020__: _Teaching assistant_ at Stanford University, USA  
