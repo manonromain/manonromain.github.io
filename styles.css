@@ -19,11 +19,12 @@ h2 {
 
 #logos{
     text-align: center;
-    margin: 20px 0;
+    margin: 10px auto;
+    width:50%;
 }
 
-i.logo{
-    margin: auto;
+#logos a{
+    margin: 20px;
 }
 
 #menu.a {
