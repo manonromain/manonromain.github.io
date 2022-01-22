@@ -38,6 +38,15 @@ i.logo{
 }
 
 
+#content {
+    width: 60%;
+    margin-left: 30%;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+
+
 
 @media screen and (min-width: 1000px)
 {
@@ -68,15 +77,9 @@ i.logo{
     }
     #content {
         width: auto;
+        margin: 0 3%;
     }
 
-}
-
-#content {
-    width: 60%;
-    margin-left: 30%;
-    font-size: 16px;
-    margin-bottom: 50px;
 }
 
 li {
