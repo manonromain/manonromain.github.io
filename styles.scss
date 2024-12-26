@@ -54,7 +54,7 @@ h2 {
 .grid_content {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     &>a {
         border-radius: 10px;
@@ -99,7 +99,7 @@ h2 {
 
 @media screen and (max-width: 1000px) {
     .grid_content {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     /* Rédigez vos propriétés CSS ici */
