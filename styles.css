@@ -57,6 +57,7 @@ h2 {
   background-color: #eef2fd;
   padding: 15px 20px;
   text-decoration: none;
+  display: block;
 }
 .grid_content > a h4 {
   margin: 0;
