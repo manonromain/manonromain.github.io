@@ -60,6 +60,7 @@ h2 {
         border-radius: 10px;
         background-color: #eef2fd;
         padding: 15px 20px;
+        text-decoration: none;
 
         h4 {
             margin: 0;
@@ -72,7 +73,7 @@ h2 {
 
             .author_name {
                 text-decoration: none;
-                color: var(--color)
+                color: var(--color);
             }
         }
 
