@@ -89,7 +89,9 @@
         <div id="papers_lemonde">
           <h1>Articles</h1>
           <ul></ul>
-          <p>La suite sur le site du <a href="https://www.lemonde.fr/signataires/manon-romain/" target="_blank"><em>Monde</em></a></p>
+          <p>
+            La suite sur le site du <a href="https://www.lemonde.fr/signataires/manon-romain/" target="_blank"><em>Monde</em></a>
+          </p>
         </div>
         <span class="dot"></span>
         <h1 id="papers">Articles de recherche</h1>
@@ -121,24 +123,26 @@
   </body>
 
   <script>
-    async function getArticles() {
+    function getArticles() {
       const url = "articles.json";
-      const articles = await fetch(url).json();
-      // Do something with the scraped content
-      console.log(articles);
-      const container = document.querySelector("#papers_lemonde ul");
-      for (let article of articles) {
-        const article_item = document.createElement("li");
-        let html = `
-        <a href="${article.url}" target="_blank">${article.name}</a>
-        `;
+      fetch(url)
+        .then((response) => response.json())
+        .then((articles) => {
+          // Do something with the scraped content
+          console.log(articles);
+          const container = document.querySelector("#papers_lemonde ul");
+          for (let article of articles) {
+            const article_item = document.createElement("li");
+            let html = `
+            <a href="${article.url}" target="_blank">${article.name}</a>
+            `;
 
-        for (let author of article.authors) 
-          html += `<span class="author_name"><em>${author.trim()}</em></span>`;
+            for (let author of article.authors) html += `<span class="author_name"><em>${author.trim()}</em></span>`;
 
-        article_item.innerHTML = html;
-        container.appendChild(article_item);
-      }
+            article_item.innerHTML = html;
+            container.appendChild(article_item);
+          }
+        });
     }
 
     getArticles();
