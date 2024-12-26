@@ -1,0 +1,157 @@
+body {
+    display: flex;
+    color: #3d3d3d;
+    font-family: "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    --color: #3d3d3d;
+    --accent: cornflowerblue;
+}
+
+/*#container{*/
+/*    width:900px;*/
+/*}*/
+
+h1#name {
+    color: var(--accent)
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+#logos {
+    text-align: center;
+    margin: 10px auto;
+    width: 50%;
+
+    a {
+        margin: 20px;
+    }
+}
+
+
+#menu.a {
+    line-height: 2;
+}
+
+#menu {
+    width: 30%;
+    margin: 0;
+    padding: 10px;
+    float: left;
+}
+
+
+#content {
+    width: 60%;
+    margin-left: 30%;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+    /* Rédigez vos propriétés CSS ici */
+
+    #menu {
+        position: -webkit-sticky;
+        /* Safari */
+        position: sticky;
+        top: 0;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* Rédigez vos propriétés CSS ici */
+    #container {
+        width: auto;
+    }
+
+    #menu {
+        width: auto;
+        height: auto;
+        text-align: center;
+        float: inherit;
+    }
+
+    #logos {
+        margin-top: 5px;
+    }
+
+    #content {
+        width: auto;
+        margin: 0 3%;
+    }
+
+}
+
+li {
+    opacity: 0.9;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+p.firstline {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+strong {
+    margin-bottom: 10px;
+}
+
+a {
+    color: currentColor;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 2px;
+    transition: all 0.2s ease-in;
+}
+
+a.incognito-link {
+    color: inherit;
+    text-decoration-color: inherit;
+}
+
+a:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong,
+#name {
+    transition: all ease-in 0.2s;
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+strong:hover,
+#name:hover {
+    color: #888888;
+}
+
+.dot:hover {
+    background-color: #888888;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+::selection {
+    background-color: #eef2fd;
+}

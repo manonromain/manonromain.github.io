@@ -1,83 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Manon Romain</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="profile.png" />
-</head>
+  </head>
 
-<body>
+  <body>
+    <div id="container">
+      <div id="menu">
+        <h1 id="name">Manon Romain</h1>
+        <a href="french.html#resume">CV</a><br />
+        <a href="french.html#papers">Articles</a><br />
+        <a href="french.html#more-about-me">En +</a><br />
+        <a href="french.html#contact">Contact</a>
+        <!--    <a href="amis.html">Quelques liens intéressants</a>-->
+        <div id="logos">
+          <a href="https://github.com/manonromain"><i class="fa fa-github" style="font-size: 36px"></i></a>
+          <a href="https:/www.linkedin.com/in/manon-romain643/"><i style="font-size: 36px" class="fa fa-linkedin"></i></a>
+        </div>
+        <a href="index.html" class="change-language">Read in English</a>
+      </div>
+      <div id="content">
+        <br />
 
-<div id="container">
-<div id="menu">
-<h1 id="name">Manon Romain</h1>
-<a href="index.html#resume">Resume</a><br>
-    <a href="index.html#papers">Papers</a><br>
-    <a href="index.html#more-about-me">More about me</a><br>
-    <a href="index.html#contact">Contact</a>
-    <div id="logos">
-        <a href="https://github.com/manonromain"><i class="logo fa fa-github" style="font-size:36px"></i></a>
-        <a href="/https://www.linkedin.com/in/manon-romain643/"><i style="font-size:36px" class="logo fa fa-linkedin"></i></a>
+        <p>Je suis data-journaliste aux <a href="https://www.lemonde.fr/les-decodeurs/">Décodeurs</a> du journal Le Monde.</p>
+        <span class="dot"></span>
+        <h1 id="resume">CV</h1>
+        <h2 id="job-research-experience">Expérience professionnelle et recherche</h2>
+        <ul>
+          <li>
+            <p class="firstline"><strong>Novembre 2021 - aujourd'hui</strong>: <em>Data-journaliste</em> aux Décodeurs du <em>Monde</em>, France</p>
+            Dans l'équipe des Décodeurs, j'écris des articles de data-journalisme, quelques fact-checks. J'écris également des scripts Python pour aider le reste de la rédaction, je crée des outils en
+            Django et nettoie de grandes bases de données à des fins d'enquête.
+          </li>
+          <li>
+            <p class="firstline"><strong>Juin 2020 - Août 2021</strong>: <em>Doctorat</em> à SIERRA - INRIA/CNRS, France</p>
+            Etude de la causalité par apprentissage statistique et optimisation de réseaux graphiques. Encadrée par Alexandre d'Aspremont dans l'équipe Sierra de l'INRIA Paris.
+          </li>
+          <li>
+            <p class="firstline"><strong>2019 - 2020</strong>: <em>Assistante enseignante</em> à Stanford University, USA</p>
+            Mining Massive Data Sets (Graduate), Linear Algebra with Application to Engineering Computations (Graduate), Partial Differential Equations for Engineers &amp; Vector Calculus for
+            Engineers (Undergraduate)<br />Classe de plus de 150 élèves. 20h par semaine: correction, séances de questions, création de TDs et d'examens, cours en amphi.
+          </li>
+          <li>
+            <p class="firstline"><strong>Juin 2019 - Août 2019</strong>: <em>Développeuse Machine Learning</em> à Therapanacea, France</p>
+            J'ai conçu un nouveau réseau de segmentation pour les organes et les tumeurs sur des scanners. Combinaison de réseaux 3D basse résolution et 2D haute résolution pour atténuer le problème
+            du <em>patch training</em>.
+          </li>
+          <li>
+            <p class="firstline"><strong>Avril 2018 - Juillet 2018</strong>: <em>Stage de recherche</em> à l'Institute for InfoComm Research, Singapore</p>
+            J'ai implémenté plusieurs articles <em>state-of-the-art</em> pour les comparer à notre modèle et mené des expériences approfondies sur plusieurs modèles et bases de données. J'ai également
+            travaillé avec l'équipe d'imagerie médicale pour appliquer nos techniques à la détection de pathologies ophtalmiques.
+          </li>
+          <li>
+            <p class="firstline"><strong>Juin 2017 - Août 2017</strong>: <em>Stage Deep Learning</em> à Pzartech, Tel-Aviv, Israël</p>
+            J'ai participé à la conception d'un réseau neuronal de reconnaissance RGB-D. Également développé un système de reconnaissance 2D, et mis en pratique mes compétences en vision par
+            ordinateur pour concevoir un pipeline d'apprentissage complet: de la génération de jeux de données à la reconnaissance des pièces.
+          </li>
+          <li>
+            <p class="firstline"><strong>Septembre 2015 - Avril 2016</strong>: <em>Stage d'éducatrice</em> à Apprentis d&#39;Auteuil, France</p>
+            J'ai organisé et participé le quotidien de 40 jeunes en difficulté avec activités éducatives et événements caritatifs ; j'ai par ailleurs développé un cours d'introduction à l'informatique
+            en utilisant Scratch.
+          </li>
+        </ul>
+        <h2 id="education">Formation</h2>
+        <ul>
+          <li>
+            <p class="firstline"><strong>Master à Stanford University</strong> (2018 - 2020)</p>
+            Ingénerie mathématique et informatique<br />Statistiques bayésiennes et classiques, Modèles génératifs profonds, Big data, Algèbre linéaire numérique, EDPs, ... Projets : détection de
+            <em>fake news</em>, analyse des sujets sur la télévision par câble américaine, ...
+          </li>
+          <li>
+            <p class="firstline"><strong>Diplôme d'ingénieur à l'École polytechnique</strong> (2015 - 2018)</p>
+            Vision par ordinateur et apprentissage automatique - Optimisation, modélisation aléatoire, calcul différentiel, vision par ordinateur, algorithmique, physique quantique et statistique,
+            biologie cellulaire et génétique
+          </li>
+          <li>
+            <p class="firstline"><strong>MPSI/MP* au Lycée Saint Louis</strong> (2013 - 2015)</p>
+            MP* option Informatique
+          </li>
+        </ul>
+        <span class="dot"></span>
+        <h1 id="papers">Articles de recherche</h1>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2011.02764">A Bregman Method for Structure Learning on Sparse Directed Acyclic Graphs</a> <em>M.&nbsp;Romain, A.&nbsp;d&#39;Aspremont</em></li>
+          <li>
+            <a href="https://ieeexplore.ieee.org/abstract/document/8594897">Adversarially learned anomaly detection</a>
+            <em>H.&nbsp;Zenati, M.&nbsp;Romain, CS.&nbsp;Foo, B.&nbsp;Lecouat, V.&nbsp;Chandrasekhar</em> accepté à la IEEE International conference on data mining (ICDM) en 2018
+          </li>
+        </ul>
+        <p>Allez voir mon <a href="https://scholar.google.com/citations?user=WkdIczkAAAAJ&amp;hl=fr">Google Scholar</a>.</p>
+        <span class="dot"></span>
+        <h1 id="more-about-me">En +</h1>
+        <p>Je parle français, anglais, et un espagnol un peu rouillé.</p>
+        <p>J'ai commencé l'escalade à Stanford et je ne me suis jamais arrêtée &#129495;&#8205;&#9792;. Sinon, je passe du temps à faire du secourisme et des maraudes avec la Protection Civile.</p>
+        <h1 id="contact">Contact</h1>
+        Si vous voulez contacter <em>Le Monde</em> pour donner des informations, c'est
+        <a href="https://www.lemonde.fr/les-decodeurs/article/2022/05/04/contactez-l-equipe-enquetes-du-monde-de-maniere-securisee_6124757_4355770.html" target="_blank">ici</a>. Si vous préfèrez me
+        contacter directement, mes messages LinkedIn sont ouverts.
+      </div>
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+      ></script>
     </div>
-    <a href="french.html" class="change-language">Lisez en Français</a>
-</div>
-<div id="content">
-<br>
-<p>I&#39;m a PhD candidate in Statistics at Sierra, Inria, currently doing a gap year as a data journalist with <a href="https://www.lemonde.fr/les-decodeurs/">Les Décodeurs</a> at leading French newspaper, Le Monde.</p>
-    <span class="dot"></span>
-    <h1 id="resume">Resume</h1>
-<h2 id="job-research-experience">Job &amp; Research Experience</h2>
-<ul>
-    <li><p class="firstline"><strong>November 2021 - now</strong>: <em>Data journalist</em> at Le Monde, France</p>As part of Les décodeurs, I wrote some data-journalism articles, a few fact-checks. I also write Python scripts for the newsroom and clean large databases for investigation purposes. </li>
-    <li><p class="firstline"><strong>June 2020 - August 2021</strong>: <em>PhD candidate</em> at SIERRA - INRIA/CNRS, France</p>
-        Structure learning of causal networks using optimization techniques. Advised by Alexandre d&#39;Aspremont.</li>
-    <li><p class="firstline"><strong>2019 - 2020</strong>: <em>Teaching assistant</em> at Stanford University, USA</p>Mining Massive Data Sets (Graduate), Linear Algebra with Application to Engineering Computations (Graduate), Partial Differential Equations for Engineers &amp; Vector Calculus for Engineers (Undergraduate)<br>Class of more than 150 students. 20h/week: grading, holding office hours, designing assignments and exams, lecturing.</li>
-    <li><p class="firstline"><strong>June 2019 - August 2019</strong>: <em>Machine Learning intern</em> at Therapanacea, France</p>I designed a new segmentation network for organs and tumors in CT Scans. Combined low resolutions 3D and high resolution 2D networks to alleviate the issue of patch training.</li>
-    <li><p class="firstline"><strong>April 2018 - July 2018</strong>: <em>Research intern</em> at Institute for InfoComm Research, Singapore</p>I implemented several state-of-the-art papers to compare them to our model and conducted extensive experiments on several models and datasets.
-        I also worked with the Medical Imaging team to apply our techniques to detecting pathologies.</li>
-    <li><p class="firstline"><strong>June 2017 - August 2017</strong>: <em>Deep Learning intern</em> at Pzartech, Tel-Aviv, Israël</p>I participated in the design of an RGB-D recognition neural network.
-        Also developed a 2D recognition system inspired by GoogLeNet Inception, and practiced my Computer Vision skills to design a whole learning pipeline. </li>
-    <li><p class="firstline"><strong>September 2015 - April 2016</strong>: <em>Educator intern</em> at Apprentis d&#39;Auteuil, France</p>Organized and leading educational activities and charity events; developed a Computer Science Introduction Course using Scratch; worked in teams with caseworkers, parents and children.</li>
-</ul>
-<h2 id="education">Education</h2>
-<ul>
-    <li><p class="firstline"><strong>MSc. at Stanford University</strong> (2018 - 2020)</p>Computational and Mathematical Engineering - GPA: 3.95/4<br>Bayesian &amp; Classical Statistics, Deep Generative Models, Big data, Numerical Linear Algebra, PDEs, ...
-        Projects: Fake News Detection, Topic analysis on cable-news TV, ...</li>
-    <li><p class="firstline"><strong>BSc. &amp; MSc. at Ecole Polytechnique</strong> (2015 - 2018)</p>Computer Vision and Machine Learning - GPA: 3.88/4<br>Relevant courses: Mathematics &amp; Computer Science - Optimization, Random Modeling, Differential Calculus, Computer Vision, Computer Graphics, Algorithmic, Quantum and Statistical Physics, Cellular Biology &amp; Genetics}</li>
-    <li><p class="firstline"><strong>Lycée Saint Louis</strong> (2013 - 2015)</p>MP option Info - Intensive undergraduate program in Mathematics, Physics and Computer Science. - GPA: 4.0
-        Program leading to the nationwide competitive entrance to the French Grandes Écoles for scientific studies.</li>
-</ul>
-    <span class="dot"></span>
-<h1 id="papers">Papers</h1>
-<h2 id="as-a-journalist">As a journalist</h2>
-<p>Articles I&#39;m most proud of:</p>
-<ul>
-    <li><a href="https://www.lemonde.fr/les-decodeurs/article/2021/12/15/abaisser-la-majorite-penale-creer-des-centres-fermes-que-valent-ces-propositions-sur-la-justice-des-mineurs_6106189i_4355770.html">Abaisser la majorité pénale, créer des centres fermés… que valent les propositions des candidats sur la justice des mineurs ?</a> : a deep dive into the French justice system for minors, we analysed 75+ years of modification to the seminal ruling of 1945 into a more harshed and how that compares to the discourse of French presidential candidates.</li>
-    <li><a href="https://www.lemonde.fr/les-decodeurs/article/2021/12/05/encadrement-des-loyers-37-de-loyers-abusifs-a-paris-43-en-seine-saint-denis_6104818_4355770.html">Encadrement des loyers : 37 % de loyers abusifs à Paris, 43 % en Seine-Saint-Denis</a> : some major urban areas in France are rent-controlled, but there is little data of enforcement of those somewhat new policies so I scraped a major website for apartment rentals and confronted their data to the legislation. Turns out more than 1/3 of property ads were not in the right range of prices - if you don&#39;t speak French, check out the maps!</li>
-</ul>
-<p>See <a href="https://www.lemonde.fr/signataires/manon-romain/">here</a> for more.</p>
-<h2 id="as-a-student-researcher">As a student / researcher</h2>
-<ul>
-    <li><a href="https://arxiv.org/abs/2011.02764">A Bregman Method for Structure Learning on Sparse Directed Acyclic Graphs</a> <em>M.&nbsp;Romain, A.&nbsp;d&#39;Aspremont</em></li>
-    <li><a href="https://ieeexplore.ieee.org/abstract/document/8594897">Adversarially learned anomaly detection</a> <em>H.&nbsp;Zenati, M.&nbsp;Romain, CS.&nbsp;Foo, B.&nbsp;Lecouat, V.&nbsp;Chandrasekhar</em> accepted at the 2018 IEEE International conference on data mining (ICDM)</li>
-</ul>
-<p>Check out my <a href="https://scholar.google.com/citations?user=WkdIczkAAAAJ&amp;hl=fr">Google Scholar</a>.</p>
-    <span class="dot"></span>
-<h1 id="more-about-me">More about me</h1>
-<p>I speak French, English and a rusty Spanish because I was raised on the French-Spanish border.  </p>
-<p>I started climbing in Stanford and basically didn&#39;t stop &#129495;&#8205;&#9792;. I also volunteer as an EMS at Protection Civile and participate in many humanitarian actions with them.
-    I also love to play volleyball, paraglide, and ski.</p>
-    <span class="dot"></span>
-    <h1 id="contact">Contact</h1>
-Email me at firstname.lastname@ens.fr
-</div>
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</div>
-</body>
+  </body>
 </html>
