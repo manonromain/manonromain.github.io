@@ -132,14 +132,19 @@
           const container = document.querySelector("#papers_lemonde .grid_content");
           for (let article of articles) {
             const article_item = document.createElement("a");
-            article_item.setAttribute("href", article.url)
-            article_item.setAttribute("target", "_blank")
+            article_item.setAttribute("href", article.url);
+            article_item.setAttribute("target", "_blank");
             let html = `
             <h4>${article.name}</h4>
             <div class="authors">
             `;
 
-            for (let author of article.authors) html += `<span class="author_name"><em>${author.trim()}</em></span>`;
+            for (let author of article.authors) {
+              if (author.trim() == "Manon Romain")
+              html += `<span class="author_name"><strong>${author.trim()}</strong></span>`;
+              else
+              html += `<span class="author_name">${author.trim()}</span>`;
+            }
 
             html += `</div>`;
             article_item.innerHTML = html;
