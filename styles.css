@@ -54,7 +54,8 @@ h2 {
 }
 .grid_content > a {
   border-radius: 10px;
-  background-color: #eef2fd;
+  background-color: rgba(238, 242, 253, 0.4980392157);
+  box-shadow: 2px 2px 2px #eef2fd;
   padding: 15px 20px;
   text-decoration: none;
   display: block;
