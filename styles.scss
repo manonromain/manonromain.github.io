@@ -53,8 +53,8 @@ h2 {
 
 .grid_content {
     display: grid;
-    grid-template-columns: minmax();
     gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
 
     &>a {
         width: 350px;
@@ -99,6 +99,9 @@ h2 {
 }
 
 @media screen and (max-width: 1000px) {
+    .grid_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     /* Rédigez vos propriétés CSS ici */
     #container {
