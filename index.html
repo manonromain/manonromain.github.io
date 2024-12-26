@@ -14,16 +14,16 @@
     <div id="container">
       <div id="menu">
         <h1 id="name">Manon Romain</h1>
-        <a href="french.html#resume">CV</a><br />
-        <a href="french.html#papers">Articles</a><br />
-        <a href="french.html#more-about-me">En +</a><br />
-        <a href="french.html#contact">Contact</a>
+        <a href="#resume">CV</a><br />
+        <a href="#papers">Articles</a><br />
+        <a href="#more-about-me">En +</a><br />
+        <a href="#contact">Contact</a>
         <!--    <a href="amis.html">Quelques liens intéressants</a>-->
         <div id="logos">
           <a href="https://github.com/manonromain"><i class="fa fa-github" style="font-size: 36px"></i></a>
           <a href="https:/www.linkedin.com/in/manon-romain643/"><i style="font-size: 36px" class="fa fa-linkedin"></i></a>
         </div>
-        <a href="index.html" class="change-language">Read in English</a>
+        <a href="english.html" class="change-language">Read in English</a>
       </div>
       <div id="content">
         <br />
@@ -129,12 +129,13 @@
         .then((response) => response.json())
         .then((articles) => {
           // Do something with the scraped content
-          console.log(articles);
           const container = document.querySelector("#papers_lemonde .grid_content");
           for (let article of articles) {
-            const article_item = document.createElement("div");
+            const article_item = document.createElement("a");
+            article_item.setAttribute("href", article.url)
+            article_item.setAttribute("target", "_blank")
             let html = `
-            <h4><a href="${article.url}" target="_blank">${article.name}</a></h4>
+            <h4>${article.name}</h4>
             <div class="authors">
             `;
 
