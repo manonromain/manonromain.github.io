@@ -86,6 +86,11 @@
           </li>
         </ul>
         <span class="dot"></span>
+        <div id="papers_lemonde">
+          <h1>Articles</h1>
+          <ul></ul>
+        </div>
+        <span class="dot"></span>
         <h1 id="papers">Articles de recherche</h1>
         <ul>
           <li><a href="https://arxiv.org/abs/2011.02764">A Bregman Method for Structure Learning on Sparse Directed Acyclic Graphs</a> <em>M.&nbsp;Romain, A.&nbsp;d&#39;Aspremont</em></li>
@@ -121,6 +126,18 @@
       const articles = response.json();
       // Do something with the scraped content
       console.log(articles);
+      const container = document.querySelector("#papers_lemonde ul");
+      for (let article of articles) {
+        const article_item = document.createElement("li");
+        let html = `
+        <a href="${article.url}" target="_blank">${article.name}</a>
+        `;
+
+        for (let author of article.authors) html += `<span class="author_name"><em>${author.trim()}</em></span>`;
+
+        article_item.innerHTML = html;
+        container.appendChild(article_item);
+      }
     }
 
     getArticles();
