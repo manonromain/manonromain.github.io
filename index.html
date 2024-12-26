@@ -122,8 +122,7 @@
   <script>
     async function getArticles() {
       const url = "articles.json";
-      const response = await fetch(url);
-      const articles = response.json();
+      const articles = await fetch(url).json();
       // Do something with the scraped content
       console.log(articles);
       const container = document.querySelector("#papers_lemonde ul");
