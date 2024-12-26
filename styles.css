@@ -48,8 +48,13 @@ h2 {
 }
 
 .grid_content {
-  display: grid;
-  grid-template-columns: minmax();
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid_content > div {
+  width: 300px;
+  border-radius: 10px;
+  background-color: #eef2fd;
 }
 
 @media screen and (min-width: 1000px) {
