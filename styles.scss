@@ -5,6 +5,7 @@ body {
     line-height: 1.5;
     --color: #3d3d3d;
     --accent: cornflowerblue;
+    transition: 0.2s ease-in;
 }
 
 /*#container{*/
@@ -119,15 +120,6 @@ a.incognito-link {
 a:hover {
     color: var(--accent);
     text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-strong,
-#name {
-    transition: all ease-in 0.2s;
 }
 
 h1:hover,
