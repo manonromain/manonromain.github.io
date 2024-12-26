@@ -64,6 +64,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 0 10px;
+}
+.grid_content > a div.authors .author_name {
   text-decoration: none;
   color: var(--color);
 }

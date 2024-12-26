@@ -69,8 +69,11 @@ h2 {
             display: flex;
             flex-wrap: wrap;
             gap: 0 10px;
-            text-decoration: none;
-            color: var(--color)
+
+            .author_name {
+                text-decoration: none;
+                color: var(--color)
+            }
         }
 
 
