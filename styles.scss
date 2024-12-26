@@ -52,9 +52,8 @@ h2 {
 
 
 .grid_content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: minmax();
     gap: 10px;
 
     &>a {
