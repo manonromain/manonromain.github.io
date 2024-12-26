@@ -140,9 +140,6 @@
             `;
 
             for (let author of article.authors) {
-              if (author.trim() == "Manon Romain")
-              html += `<span class="author_name"><strong>${author.trim()}</strong></span>`;
-              else
               html += `<span class="author_name">${author.trim()}</span>`;
             }
 
