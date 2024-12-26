@@ -61,7 +61,19 @@ h2 {
         /* Safari */
         position: sticky;
         top: 0;
+
+        #logos {
+            margin: 10px 0;
+            display: flex;
+            gap: 20px;
+
+            a {
+                margin: 0;
+            }
+        }
     }
+
+
 
 }
 
@@ -119,7 +131,7 @@ a.incognito-link {
 
 a:hover {
     color: var(--accent);
-    text-decoration-thickness: 0;
+    text-decoration: none;
 }
 
 .dot:hover {

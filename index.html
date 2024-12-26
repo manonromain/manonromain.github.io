@@ -39,7 +39,7 @@
             Django et nettoie de grandes bases de données à des fins d'enquête.
           </li>
           <li>
-            <p class="firstline"><strong>Juin 2020 - Août 2021</strong>: <em>Doctorat</em> à SIERRA - INRIA/CNRS, France</p>
+            <p class="firstline"><strong>Juin 2020 - Août 2021</strong>: <em>Doctorat (non terminé)</em> à SIERRA - INRIA/CNRS, France</p>
             Etude de la causalité par apprentissage statistique et optimisation de réseaux graphiques. Encadrée par Alexandre d'Aspremont dans l'équipe Sierra de l'INRIA Paris.
           </li>
           <li>
@@ -113,4 +113,16 @@
       ></script>
     </div>
   </body>
+
+  <script>
+    async function getArticles() {
+      const url = "articles.json";
+      const response = await fetch(url);
+      const articles = response.json();
+      // Do something with the scraped content
+      console.log(articles);
+    }
+
+    getArticles();
+  </script>
 </html>

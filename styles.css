@@ -54,6 +54,14 @@ h2 {
     position: sticky;
     top: 0;
   }
+  #menu #logos {
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
+  }
+  #menu #logos a {
+    margin: 0;
+  }
 }
 @media screen and (max-width: 1000px) {
   /* Rédigez vos propriétés CSS ici */
@@ -103,7 +111,7 @@ a.incognito-link {
 
 a:hover {
   color: var(--accent);
-  text-decoration-thickness: 0;
+  text-decoration: none;
 }
 
 .dot:hover {
