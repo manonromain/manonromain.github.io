@@ -50,11 +50,19 @@ h2 {
 .grid_content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
 }
 .grid_content > div {
-  width: 300px;
+  width: 350px;
   border-radius: 10px;
   background-color: #eef2fd;
+  padding: 5px 20px;
+}
+.grid_content > div div.authors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 @media screen and (min-width: 1000px) {

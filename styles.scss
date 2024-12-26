@@ -54,11 +54,20 @@ h2 {
 .grid_content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
 
-    & > div {
-        width: 300px;
+    &>div {
+        width: 350px;
         border-radius: 10px;
         background-color: #eef2fd;
+        padding: 5px 20px;
+
+        div.authors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
     }
 }
 
