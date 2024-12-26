@@ -88,7 +88,7 @@
         <span class="dot"></span>
         <div id="papers_lemonde">
           <h1>Articles</h1>
-          <ul></ul>
+          <div class="grid_content"></div>
           <p>
             La suite sur le site du <a href="https://www.lemonde.fr/signataires/manon-romain/" target="_blank"><em>Monde</em></a>
           </p>
@@ -130,15 +130,17 @@
         .then((articles) => {
           // Do something with the scraped content
           console.log(articles);
-          const container = document.querySelector("#papers_lemonde ul");
+          const container = document.querySelector("#papers_lemonde .grid_content");
           for (let article of articles) {
-            const article_item = document.createElement("li");
+            const article_item = document.createElement("div");
             let html = `
-            <a href="${article.url}" target="_blank">${article.name}</a>
+            <h4><a href="${article.url}" target="_blank">${article.name}</a></h4>
+            <div class="authors">
             `;
 
             for (let author of article.authors) html += `<span class="author_name"><em>${author.trim()}</em></span>`;
 
+            html += `</div>`;
             article_item.innerHTML = html;
             container.appendChild(article_item);
           }

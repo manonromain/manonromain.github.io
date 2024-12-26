@@ -51,7 +51,10 @@ h2 {
 }
 
 
-
+.grid_content {
+    display: grid;
+    grid-template-columns: minmax()
+}
 
 @media screen and (min-width: 1000px) {
     /* Rédigez vos propriétés CSS ici */
