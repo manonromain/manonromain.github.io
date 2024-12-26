@@ -57,12 +57,15 @@ h2 {
   width: 350px;
   border-radius: 10px;
   background-color: #eef2fd;
-  padding: 5px 20px;
+  padding: 15px 20px;
+}
+.grid_content > div h4 {
+  margin: 0;
 }
 .grid_content > div div.authors {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 0 10px;
 }
 
 @media screen and (min-width: 1000px) {
