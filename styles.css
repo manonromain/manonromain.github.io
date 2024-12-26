@@ -61,6 +61,7 @@ h2 {
 }
 .grid_content > a h4 {
   margin: 0;
+  color: var(--accent);
 }
 .grid_content > a div.authors {
   display: flex;
